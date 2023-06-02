@@ -90,7 +90,7 @@ function Version(): JSX.Element {
           </div>
         )}
 
-        {(pastVersions.length > 0 || VersionsArchivedList.length > 0) && (
+        {(pastVersions.length > 0) && (
           <div className="margin-bottom--lg">
             <h3 id="archive">Past versions (Not maintained anymore)</h3>
             <p>

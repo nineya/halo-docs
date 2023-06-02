@@ -6,9 +6,9 @@ const VersionsArchived = require("./versionsArchived.json");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Halo Documents",
-  tagline: "Halo 博客系统的文档站点",
-  url: "https://docs.halo.run",
+  title: "Halo Plus Documents",
+  tagline: "Halo Plus 博客系统的文档站点",
+  url: "https://docs.halo-plus.nineya.com",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -17,7 +17,7 @@ const config = {
     defaultLocale: "zh-Hans",
     locales: ["zh-Hans"],
   },
-  organizationName: "halo-dev", // Usually your GitHub org/user name.
+  organizationName: "nineya", // Usually your GitHub org/user name.
   projectName: "halo", // Usually your repo name.
 
   presets: [
@@ -28,17 +28,17 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/halo-dev/docs/edit/main/",
+          editUrl: "https://github.com/nineya/halo-docs/edit/master/",
           routeBasePath: "/",
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
           remarkPlugins: [math, mermaid],
           rehypePlugins: [katex],
-          lastVersion: "2.5",
+          lastVersion: "1.0.0",
           versions: {
             current: {
-              label: "2.6.0-SNAPSHOT",
-              path: "2.6.0-SNAPSHOT",
+              label: "1.1.0-SNAPSHOT",
+              path: "1.1.0-SNAPSHOT",
             },
           },
         },
@@ -69,19 +69,19 @@ const config = {
         },
       },
       navbar: {
-        title: "Halo Documents",
+        title: "Halo Plus",
         logo: {
-          alt: "Halo Logo",
+          alt: "Halo Plus Logo",
           src: "https://halo.run/upload/2021/03/Adaptive256-463ca9b92e2d40268431018c07735842.png",
         },
         items: [
           {
-            href: "https://halo.run",
+            href: "https://www.nineya.com",
             label: "官网",
           },
           {
-            href: "https://bbs.halo.run",
-            label: "论坛",
+            href: "https://github.com/nineya/halo-theme-dream",
+            label: "Dream 主题",
           },
           {
             type: "docsVersionDropdown",
@@ -101,26 +101,21 @@ const config = {
             ],
           },
           {
-            href: "https://github.com/halo-dev/halo",
+            href: "https://github.com/nineya",
             label: "GitHub",
-            position: "right",
-          },
-          {
-            href: "https://gitee.com/halo-dev/halo",
-            label: "Gitee",
             position: "right",
           },
         ],
       },
       footer: {
         style: "dark",
-        copyright: `Copyright © 2022 <a target="_blank" href="https://www.fit2cloud.com/">FIT2CLOUD 飞致云</a>. Built with Docusaurus.`,
+        copyright: `Copyright © 2023 <a target="_blank" href="https://www.nineya.com/">玖涯</a>. Built with Docusaurus.`,
         links: [
           {
             title: "关于",
             items: [
               {
-                label: "官网",
+                label: "Halo 官网",
                 href: "https://halo.run",
               },
               {
@@ -129,15 +124,7 @@ const config = {
               },
               {
                 label: "GitHub 组织",
-                href: "https://github.com/halo-dev",
-              },
-              {
-                label: "Gitee 组织",
-                href: "https://gitee.com/halo-dev",
-              },
-              {
-                label: "Server Status",
-                href: "https://status.halo.run",
+                href: "https://github.com/nineya",
               },
             ],
           },
@@ -145,28 +132,20 @@ const config = {
             title: "社区",
             items: [
               {
-                label: "官方论坛",
-                href: "https://bbs.halo.run",
+                label: "玖涯博客",
+                href: "https://blog.nineya.com",
               },
               {
                 label: "微信公众号",
-                href: "https://halo.run/upload/2021/03/B3C27F16-4890-4633-81CC-20BA4B28F94F-2415126255c749b290312ca22d9bdeb0.jpeg",
+                href: "https://blog.nineya.com/upload/2023/05/%E6%9C%AA%E6%A0%87%E9%A2%98-2.png",
               },
               {
-                label: "微信群申请",
-                href: "https://wj.qq.com/s2/8434455/9170/",
+                label: "QQ 群申请",
+                href: "https://qm.qq.com/cgi-bin/qm/qr?k=X7p7Bs21cgtkQ0dRfzmBsuWqNNQc10hn&jump_from=webapi",
               },
               {
                 label: "GitHub Issues",
-                href: "https://github.com/halo-dev/halo/issues",
-              },
-              {
-                label: "Telegram Channel",
-                href: "https://t.me/halo_dev",
-              },
-              {
-                label: "Telegram Group",
-                href: "https://t.me/HaloBlog",
+                href: "https://github.com/nineya/halo-theme-dream/issues",
               },
             ],
           },
@@ -177,10 +156,10 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        apiKey: "739f2a55c6d13d93af146c22a4885669",
-        indexName: "docs",
+        apiKey: "467851b5fe10660c39725b16cd038571",
+        indexName: "halo-plus-nineya",
         contextualSearch: true,
-        appId: "OG53LY1OQH",
+        appId: "JZ0757H3PF",
       },
     }),
   plugins: [
@@ -189,7 +168,7 @@ const config = {
       {
         redirects: [
           {
-            to: "/1.6/getting-started/install/linux",
+            to: "/getting-started/install/linux",
             from: [
               "/zh/install",
               "/install",
@@ -204,7 +183,7 @@ const config = {
             from: ["/zh/install/docker", "/install/docker"],
           },
           {
-            to: "/1.6/getting-started/install/other/bt-panel",
+            to: "/getting-started/install/other/bt-panel",
             from: ["/zh/install/bt-panel", "/install/bt-panel"],
           },
           {
@@ -212,7 +191,7 @@ const config = {
             from: ["/zh/install/oneinstack", "/install/oneinstack"],
           },
           {
-            to: "/1.6/getting-started/install/other/tencent-cloudbase",
+            to: "/getting-started/install/other/tencent-cloudbase",
             from: [
               "/zh/install/tencent-cloudbase",
               "/install/tencent-cloudbase",
@@ -227,7 +206,7 @@ const config = {
             from: ["/zh/install/config", "/install/config"],
           },
           {
-            to: "/1.6/getting-started/upgrade",
+            to: "/getting-started/upgrade",
             from: ["/zh/install/upgrade", "/install/upgrade"],
           },
           {
@@ -260,28 +239,12 @@ const config = {
           },
         ],
         createRedirects(existingPath) {
-          if (existingPath.startsWith("/1.5/")) {
-            return [
-              existingPath.replace("/1.5/", "/1.5.4/"),
-              existingPath.replace("/1.5/", "/1.5.3/"),
-              existingPath.replace("/1.5/", "/1.5.2/"),
-              existingPath.replace("/1.5/", "/1.5.1/"),
-              existingPath.replace("/1.5/", "/1.5.0/"),
-            ];
-          }
-          if (existingPath.startsWith("/1.4/")) {
-            return [existingPath.replace("/1.4/", "/1.4.17/")];
-          }
-          if (existingPath.startsWith("/2.6.0-SNAPSHOT/")) {
-            return [
-              existingPath.replace("/2.6.0-SNAPSHOT/", "/2.0.0-SNAPSHOT/"),
-              existingPath.replace("/2.6.0-SNAPSHOT/", "/2.1.0-SNAPSHOT/"),
-              existingPath.replace("/2.6.0-SNAPSHOT/", "/2.2.0-SNAPSHOT/"),
-              existingPath.replace("/2.6.0-SNAPSHOT/", "/2.3.0-SNAPSHOT/"),
-              existingPath.replace("/2.6.0-SNAPSHOT/", "/2.4.0-SNAPSHOT/"),
-              existingPath.replace("/2.6.0-SNAPSHOT/", "/2.5.0-SNAPSHOT/"),
-            ];
-          }
+          // if (existingPath.startsWith("/1.5/")) {
+          //   return [
+          //     existingPath.replace("/1.5/", "/1.5.4/"),
+          //     existingPath.replace("/1.5/", "/1.5.0/"),
+          //   ];
+          // }
           return undefined;
         },
       },
