@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_nineya_docs=self.webpackChunk_nineya_docs||[]).push([[9960],{5745:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_nineya_halo_docs=self.webpackChunk_nineya_halo_docs||[]).push([[5633],{7085:e=>{e.exports=JSON.parse('{"name":"docusaurus-theme-search-algolia","id":"default"}')}}]);
