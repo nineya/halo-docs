@@ -94,7 +94,7 @@ mkdir ~/app && cd ~/app
 3. 下载运行包
 
 ```bash
-wget https://dl.halo-plus.run/release/halo-plus-1.0.0.jar -O halo-plus.jar
+wget https://github.com/nineya/halo-plus/releases/download/1.0.0/halo-plus-1.0.0.jar -O halo-plus.jar
 ```
 
 :::info
@@ -104,13 +104,13 @@ wget https://dl.halo-plus.run/release/halo-plus-1.0.0.jar -O halo-plus.jar
 4. 创建 [工作目录](../prepare#工作目录)
 
 ```bash
-mkdir ~/.halo-plus&& cd ~/.halo-plus
+mkdir ~/.halo-plus && cd ~/.halo-plus
 ```
 
 5. 下载示例配置文件到 [工作目录](../prepare#工作目录)
 
 ```bash
-wget https://dl.halo-plus.run/config/application-template.yaml -O ./application.yaml 
+wget https://dl.halo.run/config/application-template.yaml -O ./application.yaml 
 ```
 
 6. 编辑配置文件，配置数据库或者端口等，如需配置请参考 [配置参考](../config)
@@ -156,7 +156,7 @@ exit
 2. 下载 Halo-Plus 官方的 halo-plus.service 模板
 
 ```bash
-wget https://dl.halo-plus.run/config/halo-plus.service -O /etc/systemd/system/halo-plus.service
+wget https://dl.halo.run/config/halo.service -O /etc/systemd/system/halo-plus.service
 ```
 
 3. 修改 halo-plus.service
@@ -173,7 +173,7 @@ vim /etc/systemd/system/halo-plus.service
 ```ini
 [Unit]
 Description=Halo-Plus Service
-Documentation=https://halo-plus.run
+Documentation=https://docs.halo-plus.nineya.run
 After=network-online.target
 Wants=network-online.target
 

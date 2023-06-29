@@ -3,7 +3,7 @@ title: 版本升级
 description: 版本升级指南
 ---
 
-当前最新版本为：1.0.0。在更新之前建议先查阅变更日志：<https://github.com/nineya/halo-plus/releases/tag/v1.0.0>
+当前最新版本为：1.0.0。在更新之前建议先查阅变更日志：<https://github.com/nineya/halo-plus/releases/tag/1.0.0>
 
 ## Linux
 
