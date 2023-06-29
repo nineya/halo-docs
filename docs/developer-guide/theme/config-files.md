@@ -258,4 +258,4 @@ general:
 <script type="text/javascript" src="${theme_base!}/assets/prism/js/prism.js"></script>
 ```
 
-更多实例可参考：<https://github.com/nineya/halo-theme-material/blob/master/settings.yaml>。
+更多实例可参考：<https://github.com/nineya/halo-theme-dream/blob/master/settings.yaml>。

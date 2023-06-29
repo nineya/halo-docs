@@ -10,7 +10,7 @@ description: 目前所有与 Halo-Plus 相关的下载地址
 :::
 
 - [运行包](https://github.com/nineya/halo-plus/releases)
-- [配置文件](https://github.com/nineya/halo-puls-common)
+- [配置文件](https://github.com/halo-dev/halo-common)
 
 ## 官方镜像源
 

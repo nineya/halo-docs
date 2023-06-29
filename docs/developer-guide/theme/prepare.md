@@ -38,7 +38,7 @@ Halo-Plus 的运行可参考上述 [系统开发](/developer-guide/core/prepare)
 
 > 为了让开发者更快速的上手主题的开发，我们提供了一个简单的开发样板以供参考。
 
-仓库地址：<https://github.com/nineya/halo-theme-quick-starter>
+仓库地址：<https://github.com/halo-dev/halo-theme-quick-starter>
 
 ## 目录结构
 
