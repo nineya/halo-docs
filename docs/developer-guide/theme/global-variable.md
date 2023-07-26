@@ -259,3 +259,17 @@ ${tags_url!}
     当前页面是首页
 </#if>
 ```
+
+## 页面标题
+
+获取配置的页面标题。
+
+- **journals_title**：日志页面标题
+- **photos_title**：图库页面标题
+- **links_title**：友情链接页面标题
+
+用法：
+
+```html
+<div>${photos_title!'我的相册'}</div>
+```

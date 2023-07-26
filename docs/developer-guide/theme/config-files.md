@@ -142,6 +142,25 @@ items:
           label: label1         // 说明
         - value: value2
           label: label2
+
+    # 集合中继器
+    item5:
+      name: item5
+      label: item5
+      type: repeater
+      description: 'item5'
+      default:
+        - children1: children1
+          children2: children2
+      children:
+        - name: children1
+          label: children1
+          type: text
+          placeholder: 'children1'
+        - name: children2
+          label: children2
+          type: text
+          placeholder: 'children2'
 ```
 
 ### 一个例子
