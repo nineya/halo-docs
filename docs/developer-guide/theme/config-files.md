@@ -129,6 +129,22 @@ items:
         - value: value2
           label: label2
 
+    # 复选框
+    item3:
+      name: item3               // 同上
+      label: item3_label        // 同上
+      type: checkbox            // 表单项类型：复选框
+      data-type: bool           // 数据类型：bool，string，long，double
+      default:
+        - value1
+        - value2
+      description: ''           // 描述，一般用于说明该设置的具体用途
+      options:                  // 选项
+        - value: value1         // 值
+          label: label1         // 说明
+        - value: value2
+          label: label2
+
     # 下拉框
     item4:
       name: item4               // 同上
@@ -161,6 +177,14 @@ items:
           label: children2
           type: text
           placeholder: 'children2'
+
+    # 代码文本框
+    item6:
+      name: item6               // 设置项的 name 值，在页面可通过 ${settings.item6!} 获取值。
+      label: item6              // 表单项的 label
+      type: code                // 表单项类型：代码文本框
+      default: ''               // 表单项的默认值
+      description: ''           // 描述，一般用于说明该设置的具体用途
 ```
 
 ### 一个例子

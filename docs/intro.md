@@ -24,7 +24,7 @@ slug: /
 <br />
 <a href="https://halo.run">Halo官网</a>
 <a href="https://bbs.halo.run">Halo官方社区</a>
-<a href="https://docs.halo.nineya.com">Halo-Plus文档</a>
+<a href="https://docs.halo-plus.nineya.com">Halo-Plus文档</a>
 <a href="https://github.com/nineya">GitHub</a>
 </p>
 
