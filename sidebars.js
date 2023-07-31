@@ -101,8 +101,13 @@ module.exports = {
         },
         {
           "type": "link",
-          "label": "REST API",
-          "href": "https://api.halo.run"
+          "label": "ADMIN API",
+          "href": "/api/1.0.1/admin-api.html"
+        },
+        {
+          "type": "link",
+          "label": "CONTENT API",
+          "href": "/api/1.0.1/content-api.html"
         }
       ],
     },
