@@ -122,7 +122,7 @@ spring:
 8. 创建 Halo-Plus 容器实例
 
 ```shell
-docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus--net halo-plus-net --restart=unless-stopped nineya/halo-plus:latest
+docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus --net halo-plus-net --restart=unless-stopped nineya/halo-plus:latest
 ```
 
 9. 打开 `http://ip:端口号` 即可看到安装引导界面。
@@ -176,7 +176,7 @@ spring:
 6. 创建 `Halo-Plus` 容器实例,并使用 `--net` 指定网络为刚才创建的`halo-plus-net`
 
 ```shell
-docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus--net halo-plus-net --restart=unless-stopped nineya/halo-plus:latest
+docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus --net halo-plus-net --restart=unless-stopped nineya/halo-plus:latest
 ```
 
 ### MySQL 在宿主机如何通过 Docker 安装 Halo-plus
@@ -198,5 +198,5 @@ wget https://dl.halo.run/config/application-template.yaml -O ./application.yaml
 3. 使用 `Docker` 启动 `Halo-Plus` 实例并指定网络模式为 `host`
 
 ```shell
-docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus--net host --restart=unless-stopped nineya/halo-plus:latest
+docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus --net host --restart=unless-stopped nineya/halo-plus:latest
 ```

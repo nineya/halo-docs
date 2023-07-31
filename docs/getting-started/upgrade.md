@@ -108,7 +108,7 @@ docker pull nineya/halo-plus:latest
 5. 创建容器
 
 ```bash
-docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo-plus:/root/.halo-plus--restart=unless-stopped nineya/halo-plus:latest
+docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo-plus:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:latest
 ```
 
 - **-it：** 开启输入功能并连接伪终端

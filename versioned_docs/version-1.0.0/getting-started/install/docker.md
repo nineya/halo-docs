@@ -42,7 +42,7 @@ docker pull nineya/halo-plus:latest
 5. 创建容器
 
 ```bash
-docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus--restart=unless-stopped nineya/halo-plus:latest
+docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:latest
 ```
 
 :::info
