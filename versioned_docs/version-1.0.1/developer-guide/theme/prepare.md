@@ -13,7 +13,7 @@ Halo-Plus 的模板引擎为 FreeMarker，建议在开发 Halo-Plus 的主题之
 
 Halo-Plus 的运行可参考上述 [系统开发](/developer-guide/core/prepare)，或者直接下载打包好的程序启动，如下步骤：
 
-1. 从 [GitHub release](https://github.com/nineya/halo-puls/releases) 或者 `玖涯菜菜子` 微信公众号下载最新的运行包。
+1. 从 [GitHub release](https://github.com/nineya/halo-plus/releases) 或者 `玖涯菜菜子` 微信公众号下载最新的运行包。
 2. 在终端中执行 `java -jar halo-plus.jar --spring.profiles.active=dev`
 
 启动完成之后，在电脑的用户目录即可看到 `halo-plus-dev` 文件夹。

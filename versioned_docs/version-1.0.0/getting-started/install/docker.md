@@ -109,4 +109,4 @@ encode gzip
 reverse_proxy 127.0.0.1:8090
 ```
 
-以上配置都可以在 <https://github.com/nineya/halo-puls-common> 找到。
+以上配置都可以在 <https://github.com//halo-dev/halo-common> 找到。
