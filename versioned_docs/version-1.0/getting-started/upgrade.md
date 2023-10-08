@@ -3,7 +3,7 @@ title: 版本升级
 description: 版本升级指南
 ---
 
-当前最新版本为：1.0.1。在更新之前建议先查阅变更日志：<https://github.com/nineya/halo-plus/releases/tag/1.0.1>
+当前最新版本为：1.0.2。在更新之前建议先查阅变更日志：<https://github.com/nineya/halo-plus/releases/tag/1.0.2>
 
 ## Linux
 
@@ -38,7 +38,7 @@ rm -rf ~/.halo-plus/.leveldb
 4. 下载最新版本的运行包
 
 ```bash
-cd ~/app && wget https://dl.halo-plus.run/release/halo-plus-1.0.1.jar -O halo-plus.jar
+cd ~/app && wget https://dl.halo-plus.run/release/halo-plus-1.0.2.jar -O halo-plus.jar
 ```
 
 :::info
@@ -98,7 +98,7 @@ rm -rf ~/.halo-plus/.leveldb
 4. 拉取最新的 Halo-Plus 镜像
 
 ```bash
-docker pull nineya/halo-plus:1.0.1
+docker pull nineya/halo-plus:1.0.2
 ```
 
 :::info
@@ -108,7 +108,7 @@ docker pull nineya/halo-plus:1.0.1
 5. 创建容器
 
 ```bash
-docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo-plus:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:1.0.1
+docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo-plus:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:1.0.2
 ```
 
 - **-it：** 开启输入功能并连接伪终端

@@ -76,10 +76,10 @@ server {
 
     ```bash
     # 第一个 Halo-Plus 容器
-    docker run -it -d --name halo1 -p 8090:8090 -v ~/.halo.1:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:1.0.1
+    docker run -it -d --name halo1 -p 8090:8090 -v ~/.halo.1:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:1.0.2
 
     # 第二个 Halo-Plus 容器
-    docker run -it -d --name halo2 -p 8091:8090 -v ~/.halo.2:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:1.0.1
+    docker run -it -d --name halo2 -p 8091:8090 -v ~/.halo.2:/root/.halo-plus --restart=unless-stopped nineya/halo-plus:1.0.2
     ```
 
 更多 Docker 相关的教程请参考：[使用 Docker 部署 Halo](../getting-started/install/docker.md)

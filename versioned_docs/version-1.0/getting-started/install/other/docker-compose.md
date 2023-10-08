@@ -34,7 +34,7 @@ description: 使用 Docker Compose 部署 Halo
 
     services:
       halo-plus:
-        image: nineya/halo-plus:1.0.1
+        image: nineya/halo-plus:1.0.2
         container_name: halo-plus
         restart: on-failure:3
         volumes:
@@ -64,7 +64,7 @@ description: 使用 Docker Compose 部署 Halo
 
     services:
       halo-plus-server:
-        image: nineya/halo-plus:1.0.1
+        image: nineya/halo-plus:1.0.2
         container_name: halo-plus-server
         restart: on-failure:3
         depends_on:
@@ -118,7 +118,7 @@ description: 使用 Docker Compose 部署 Halo
 
     services:
       halo-plus-server:
-        image: nineya/halo-plus:1.0.1
+        image: nineya/halo-plus:1.0.2
         container_name: halo-plus-server
         restart: on-failure:3
         depends_on:
@@ -291,7 +291,7 @@ reverse_proxy 127.0.0.1:8090
   ```yaml {3}
   services:
     halo-plus-server:
-      image: nineya/halo-plus:1.0.1
+      image: nineya/halo-plus:1.0.2
       container_name: halo-plus-server
   ```
 

@@ -37,7 +37,7 @@ slug: /
 下载最新的 Halo-Plus 运行包：
 
 ```bash
-curl -L https://github.com/nineya/halo-plus/releases/download/1.0.1/halo-plus-1.0.1.jar --output halo-plus.jar
+curl -L https://github.com/nineya/halo-plus/releases/download/1.0.2/halo-plus-1.0.2.jar --output halo-plus.jar
 ```
 
 更多更新内容，见微信公众号：
@@ -47,7 +47,7 @@ curl -L https://github.com/nineya/halo-plus/releases/download/1.0.1/halo-plus-1.
 ### Docker
 
 ```bash
-docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus --restart=always nineya/halo-plus:1.0.1
+docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus --restart=always nineya/halo-plus:1.0.2
 ```
 
 详细部署文档请查阅：<https://docs.halo-plus.nineya.com/getting-started/install/linux>
