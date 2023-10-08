@@ -18,7 +18,7 @@ const config = {
     locales: ["zh-Hans"],
   },
   organizationName: "nineya", // Usually your GitHub org/user name.
-  projectName: "halo", // Usually your repo name.
+  projectName: "halo-plus", // Usually your repo name.
 
   presets: [
     [
@@ -34,11 +34,11 @@ const config = {
           showLastUpdateAuthor: true,
           remarkPlugins: [math, mermaid],
           rehypePlugins: [katex],
-          lastVersion: "1.0.1",
+          lastVersion: "1.0",
           versions: {
             current: {
-              label: "1.1.0-SNAPSHOT",
-              path: "1.1.0-SNAPSHOT",
+              label: "1.1-SNAPSHOT",
+              path: "1.1-SNAPSHOT",
             },
           },
         },

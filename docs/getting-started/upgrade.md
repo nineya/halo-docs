@@ -3,7 +3,7 @@ title: 版本升级
 description: 版本升级指南
 ---
 
-当前最新版本为：1.0.0。在更新之前建议先查阅变更日志：<https://github.com/nineya/halo-plus/releases/tag/1.0.0>
+当前最新版本为：1.1.0。在更新之前建议先查阅变更日志：<https://github.com/nineya/halo-plus/releases/tag/1.1.0>
 
 ## Linux
 
@@ -38,7 +38,7 @@ rm -rf ~/.halo-plus/.leveldb
 4. 下载最新版本的运行包
 
 ```bash
-cd ~/app && wget https://dl.halo-plus.run/release/halo-plus-1.0.0.jar -O halo-plus.jar
+cd ~/app && wget https://dl.halo-plus.run/release/halo-plus-1.1.0.jar -O halo-plus.jar
 ```
 
 :::info

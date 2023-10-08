@@ -37,7 +37,7 @@ slug: /
 下载最新的 Halo-Plus 运行包：
 
 ```bash
-curl -L https://github.com/nineya/halo-plus/releases/download/1.0.0/halo-plus-1.0.0.jar --output halo-plus.jar
+curl -L https://github.com/nineya/halo-plus/releases/download/1.1.0/halo-plus-1.1.0.jar --output halo-plus.jar
 ```
 
 更多更新内容，见微信公众号：

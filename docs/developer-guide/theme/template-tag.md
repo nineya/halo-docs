@@ -92,6 +92,92 @@ posts:
 <a href="http://localhost:8090/archives/url3">title3</a>
 ```
 
+### 获取按指定字段排序的文章（sort）
+
+#### 语法
+
+```html
+<@postTag method="sort" count="5" direction="desc" sort="visits">
+// do something
+</@postTag>
+```
+
+参数：
+
+1. method：sort
+2. count：所需要获取的条数
+3. direction：排序方式：升序（asc）、降序（desc）
+4. sort：用于排序的字段名称
+
+#### 返回参数
+
+posts:
+
+```json
+[{
+    "categories": [{
+        "createTime": "2020-10-11T05:22:08.264Z",
+        "description": "string",
+        "fullPath": "string",
+        "id": 0,
+        "name": "string",
+        "parentId": 0,
+        "slug": "string",
+        "thumbnail": "string"
+    }],
+    "commentCount": 0,
+    "createTime": "2020-10-11T05:22:08.264Z",
+    "disallowComment": true,
+    "editTime": "2020-10-11T05:22:08.264Z",
+    "editorType": "MARKDOWN",
+    "fullPath": "string",
+    "id": 0,
+    "likes": 0,
+    "metaDescription": "string",
+    "metaKeywords": "string",
+    "metas": {},
+    "password": "string",
+    "slug": "string",
+    "status": "PUBLISHED",
+    "summary": "string",
+    "tags": [{
+        "createTime": "2020-10-11T05:22:08.264Z",
+        "fullPath": "string",
+        "id": 0,
+        "name": "string",
+        "slug": "string",
+        "thumbnail": "string"
+    }],
+    "template": "string",
+    "thumbnail": "string",
+    "title": "string",
+    "topPriority": 0,
+    "topped": true,
+    "updateTime": "2020-10-11T05:22:08.264Z",
+    "visits": 0,
+    "wordCount": 0
+}]
+```
+
+#### 示例
+
+```html
+<@postTag method="sort" count="3" direction="desc" sort="visits">
+    <#list posts as post>
+        <a href="${post.fullPath!}">${post.title!}</a>
+    </#list>
+</@postTag>
+```
+
+输出：
+
+```html
+<a href="http://localhost:8090/archives/url1">title1</a>
+<a href="http://localhost:8090/archives/url2">title2</a>
+<a href="http://localhost:8090/archives/url3">title3</a>
+```
+
+
 ### 获取所有文章的数量（count）
 
 #### 语法

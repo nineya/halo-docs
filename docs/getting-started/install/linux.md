@@ -94,7 +94,7 @@ mkdir ~/app && cd ~/app
 3. 下载运行包
 
 ```bash
-wget https://github.com/nineya/halo-plus/releases/download/1.0.0/halo-plus-1.0.0.jar -O halo-plus.jar
+wget https://github.com/nineya/halo-plus/releases/download/1.1.0/halo-plus-1.1.0.jar -O halo-plus.jar
 ```
 
 :::info

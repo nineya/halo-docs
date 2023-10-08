@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "1.1.0-SNAPSHOT",
+    "message": "1.1-SNAPSHOT",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.入门": {

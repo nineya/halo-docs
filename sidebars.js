@@ -102,12 +102,12 @@ module.exports = {
         {
           "type": "link",
           "label": "ADMIN API",
-          "href": "/api/1.0.1/admin-api.html"
+          "href": "https://docs.halo-plus.nineya.com/api/1.0/admin-api.html"
         },
         {
           "type": "link",
           "label": "CONTENT API",
-          "href": "/api/1.0.1/content-api.html"
+          "href": "https://docs.halo-plus.nineya.com/api/1.0/content-api.html"
         }
       ],
     },
