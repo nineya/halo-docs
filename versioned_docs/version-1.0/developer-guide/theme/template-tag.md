@@ -2138,7 +2138,7 @@ count: long
 #### 语法
 
 ```html
-<@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3">
+<@paginationTag method="index" page="${posts.number}" total="${posts.totalPages}" display="3" isFull="true">
 // do something
 </@paginationTag>
 ```
@@ -2149,6 +2149,7 @@ count: long
 2. page：当前页，通过 `${posts.number}` 得到
 3. total：总页数，通过 `${posts.totalPages}` 得到
 4. display：页码展示数量
+5. isFull: 是否包含首页和结尾页页码
 
 #### 返回参数
 
