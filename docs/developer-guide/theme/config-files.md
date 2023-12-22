@@ -19,6 +19,7 @@ website: 主题地址，可填写为 git 仓库地址
 repo: 主题 git 仓库地址，如有填写，后台可在线更新
 version: 版本号
 require: 最低支持的 Halo-Plus 版本，如：1.3.0，那么如果用户的版本为 1.3.0 以下，则无法安装
+editorOptions: 主题用于设置编辑器options参数的JavaScript脚本地址
 
 postMetaField:              文章自定义 meta 变量
   - meta_key  
@@ -41,6 +42,7 @@ website: https://blog.nineya.com
 repo: https://github.com/nineya/halo-theme-dream
 version: 2.2.1
 require: 1.0.0
+editorOptions: /themes/dream/source/js/editor-options.min.js?mew=3.2.1
 postMetaField:
   - enable_copyright               # 假设在文章页面需要播放背景音乐，用户可以自己填写音乐地址。
   - thumbnail_mode            # 假设在文章页有一个下载按钮，那么用户也可以自己填写加载地址。
@@ -50,9 +52,31 @@ sheetMetaField:
   - tips
 ```
 
+### editorOptions 编辑器参数
+
+这个为 1.1.4 引入的新功能，用户可通过 `editorOptions` 指定一个 `javaScript` 脚本，控制博客编辑器工具栏和一些其他行为。
+
+脚本中需要包含一个 `window.handleEditorOptions` 函数，函数响应 `options` 对象，`options` 对象配置内容可参见 `Vditor` 官网。
+
+脚本示例如下：
+
+```javascript
+(function () {
+  window.handleEditorOptions = (editorComponent) => {
+    return {
+      hint: {
+        emoji: {
+          haha: '/themes/dream/source/img/emoji/haha.png'
+        }
+      }
+    }
+  }
+})()
+```
+
 ### 自定义 meta
 
-这个为 1.2.0 引入的功能，用户可以在文章设置中设置自定义 meta，我们在 `theme.yaml` 中填写的 `postMetaField` 和 `sheetMetaField` 为预设项，当用户激活当前主题之后，在文章设置中即可看到预先设置好的项，然后填写对应的值即可。
+用户可以在文章设置中设置自定义 meta，我们在 `theme.yaml` 中填写的 `postMetaField` 和 `sheetMetaField` 为预设项，当用户激活当前主题之后，在文章设置中即可看到预先设置好的项，然后填写对应的值即可。
 
 关于这个 meta 变量如何调用的问题，会在后面的模板变量中阐述。
 
