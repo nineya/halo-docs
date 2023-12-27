@@ -87,7 +87,7 @@ docker run --name some-mysql -v ~/.halo-plus/mysql:/var/lib/mysql -e MYSQL_ROOT_
 5. 创建 `Halo-Plus` 工作目录
 
 ```bash
-mkdir ~/.halo-plus&& cd ~/.halo
+mkdir ~/.halo-plus && cd ~/.halo
 ```
 
 6. 下载示例配置文件到[工作目录](https://docs.halo-plus.nineya.com/getting-started/prepare#工作目录)
@@ -141,7 +141,7 @@ docker network connect halo-plus-net some-mysql
 3. 同之前一样创建 `Halo-Plus` 工作目录
 
 ```bash
-mkdir ~/.halo-plus&& cd ~/.halo
+mkdir ~/.halo-plus && cd ~/.halo
 ```
 
 4. 下载示例配置文件到[工作目录](https://docs.halo-plus.nineya.com/getting-started/prepare#工作目录)
@@ -186,7 +186,7 @@ docker run -it -d --name halo-plus -p 8090:8090 -v ~/.halo:/root/.halo-plus --ne
 1. 创建 `Halo-Plus` 的工作目录
 
 ```shell
-mkdir ~/.halo-plus&& cd ~/.halo
+mkdir ~/.halo-plus && cd ~/.halo
 ```
 
 2. 拉取配置

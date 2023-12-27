@@ -14,7 +14,7 @@ Halo-Plus 在 Docker Hub 上发布的镜像为 [nineya/halo-plus](https://hub.do
 1. 创建 [工作目录](../prepare#工作目录)
 
 ```bash
-mkdir ~/.halo-plus&& cd ~/.halo
+mkdir ~/.halo-plus && cd ~/.halo
 ```
 
 2. 下载示例配置文件到 [工作目录](../prepare#工作目录)
