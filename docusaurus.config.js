@@ -257,6 +257,10 @@ const config = {
       defer: true,
       "data-website-id": "7e8d48ad-973d-4b44-b36d-ea1f1df25baa",
     },
+    {
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5174961715749300",
+      crossorigin: "anonymous"
+    }
   ],
   stylesheets: [
     {
